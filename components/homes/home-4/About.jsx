@@ -14,8 +14,8 @@ export default function About() {
         <Image
           width={838}
           height={730}
-          src="/assets/img/normal/teamwork.png"
-          alt="img"
+          src="/assets/img/normal/teamwork-1.png"
+          alt="cognify-teamwork"
         />
       </div>
       <div className="container">
