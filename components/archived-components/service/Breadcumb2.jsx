@@ -1,12 +1,12 @@
 import Link from "next/link";
 import React from "react";
 
-export default function Breadcumb2() {
+export default function breadcrumb2() {
   return (
-    <div className="breadcumb-wrapper style2 bg-smoke">
+    <div className="breadcrumb-wrapper style2 bg-smoke">
       <div className="container-fluid">
-        <div className="breadcumb-content">
-          <ul className="breadcumb-menu">
+        <div className="breadcrumb-content">
+          <ul className="breadcrumb-menu">
             <li>
               <Link scroll={false} href="/">
                 Home

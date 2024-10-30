@@ -1,14 +1,14 @@
 import React from "react";
 
-export default function Breadcumb() {
+export default function breadcrumb() {
   return (
     <div
-      className="breadcumb-wrapper"
-      style={{ backgroundImage: "url(/assets/img/bg/breadcumb-bg1-5.jpg)" }}
+      className="breadcrumb-wrapper"
+      style={{ backgroundImage: "url(/assets/img/bg/breadcrumb-bg1-5.jpg)" }}
     >
       <div className="container">
-        <div className="breadcumb-content">
-          <h1 className="breadcumb-title">FAQs</h1>
+        <div className="breadcrumb-content">
+          <h1 className="breadcrumb-title">FAQs</h1>
         </div>
       </div>
     </div>

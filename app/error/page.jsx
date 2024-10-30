@@ -1,4 +1,4 @@
-import Header3 from "@/components/headers/Header3";
+import Header5 from "@/components/headers/Header5";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -10,7 +10,7 @@ export const metadata = {
 export default function NotFoundPage() {
   return (
     <>
-      <Header3 />
+      <Header5 />
       <div className="error-wrapper text-center">
         <div className="container">
           <Image

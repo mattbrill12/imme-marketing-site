@@ -1,8 +1,7 @@
 import MarqueeComponent from '@/components/common/Marquee';
 import Footer5 from '@/components/footers/Footer5';
 import Header5 from '@/components/headers/Header5';
-import Breadcumb2 from '@/components/portfolio/Breadcumb2';
-
+import Breadcrumb from '@/components/common/BreadCrumb';
 import ProjectDetails from '@/components/portfolio/ProjectDetails';
 import { allPortfolio } from '@/data/portfolio';
 export const metadata = {
@@ -21,7 +20,7 @@ export default function ProjectPageDetails({ params }) {
   return (
     <>
       <Header5 />
-      <Breadcumb2 />
+      <Breadcrumb isProject={true} projectId={params.id} />
       <ProjectDetails portfolioId={params.id} />
       <Footer5 />
     </>
