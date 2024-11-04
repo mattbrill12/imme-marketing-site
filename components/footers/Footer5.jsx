@@ -1,7 +1,6 @@
 import React from 'react';
 import Socials from './component/Socials';
 import FooterLinks3 from './component/FooterLinks3';
-import FooterLinks4 from './component/FooterLinks4';
 import Link from 'next/link';
 
 export default function Footer5() {

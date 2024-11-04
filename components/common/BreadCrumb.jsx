@@ -17,9 +17,8 @@ export default function Breadcrumb({ title, isProject = false, projectId = null 
                 <div className="breadcrumb-content">
                     <ul className="breadcrumb-menu">
                         <li>
-                            <Link scroll={false} href="/">
-                                Home
-                            </Link>
+                            <Link scroll={false} href="/">Home</Link>
+
                         </li>
                         {isProject && <li>Portfolio</li>}
                         <li>

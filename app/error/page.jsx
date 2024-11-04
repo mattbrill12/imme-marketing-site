@@ -1,6 +1,6 @@
+import LinkWithEffect from "@/components/common/LinkWithEffect";
 import Header5 from "@/components/headers/Header5";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 export const metadata = {
@@ -12,7 +12,7 @@ export default function NotFoundPage() {
     <>
       <Header5 />
       <div className="error-wrapper text-center">
-        <div className="container">
+        <div className="container" color="">
           <Image
             width={856}
             height={246}
@@ -24,7 +24,7 @@ export default function NotFoundPage() {
           <p className="sec-text mb-30">
             The link you followed probably broken or the page has been removed
           </p>
-          <Link scroll={false} href="/" className="link-btn">
+          {/* <Link scroll={false} href="/" className="link-btn">
             <span className="link-effect">
               <span className="effect-1">back to home</span>
               <span className="effect-1">back to home</span>
@@ -35,7 +35,8 @@ export default function NotFoundPage() {
               src="/assets/img/icon/arrow-left-top.svg"
               alt="icon"
             />
-          </Link>
+          </Link> */}
+          <LinkWithEffect href="/" linkText="Back to home" />
         </div>
       </div>
     </>

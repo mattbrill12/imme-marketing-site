@@ -6,6 +6,7 @@ import Nav from './component/Nav';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import LinkWithEffect from '../common/LinkWithEffect';
 
 export default function Header5() {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,9 +57,8 @@ export default function Header5() {
       <SideMenu isOpen={isOpen} setIsOpen={setIsOpen} />
 
       <div
-        className={`mobile-menu-wrapper ${
-          mobileMenuOpen ? 'body-visible' : ''
-        } `}
+        className={`mobile-menu-wrapper ${mobileMenuOpen ? 'body-visible' : ''
+          } `}
       >
         <div className="mobile-menu-area">
           <button
@@ -91,7 +91,7 @@ export default function Header5() {
               <a href="tel:19783286959">+1 978 328 6959</a>
             </h6>
             <h6>
-              <a href="mailto:frisk.agency@mail.com">
+              <a href="mailto:anthony.tran@cognify.dev">
                 anthony.tran@cognify.dev
               </a>
             </h6>
@@ -142,17 +142,10 @@ export default function Header5() {
                 </div>
                 <div className="col-auto d-none d-lg-block">
                   <div className="header-button">
-                    <Link
-                      scroll={false}
+                    <LinkWithEffect
                       href="https://n8369rxllmn.typeform.com/to/QilAkYSc"
-                      className="btn"
-                      target="blank"
-                    >
-                      <span className="link-effect">
-                        <span className="effect-1">GET STARTED TODAY</span>
-                        <span className="effect-1">GET STARTED TODAY</span>
-                      </span>
-                    </Link>
+                      linkText="GET STARTED TODAY"
+                    />
                   </div>
                 </div>
               </div>

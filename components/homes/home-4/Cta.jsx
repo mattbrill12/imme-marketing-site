@@ -1,3 +1,4 @@
+import LinkWithEffect from '@/components/common/LinkWithEffect';
 import Link from 'next/link';
 import React from 'react';
 
@@ -19,22 +20,16 @@ export default function Cta() {
                 business deserves.
               </p>
               <div className="btn-group justify-content-center">
-                <Link
-                  scroll={false}
+                <LinkWithEffect
                   href="https://n8369rxllmn.typeform.com/to/QilAkYSc"
                   className="btn mt-0"
-                  target="blank"
-                >
-                  <span className="link-effect">
-                    <span className="effect-1">GET STARTED TODAY</span>
-                    <span className="effect-1">GET STARTED TODAY</span>
-                  </span>
-                </Link>
+                  linkText='GET STARTED TODAY'
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
