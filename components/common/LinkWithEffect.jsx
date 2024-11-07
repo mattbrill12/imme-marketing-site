@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import PropTypes from "prop-types";
 
-export default function LinkWithEffect({ linkText,
+export default function LinkWithEffect({
     href,
     className = "btn",
-    color }) {
+    color,
+    linkText }) {
     return (
         <Link
             scroll={false}
@@ -22,14 +22,3 @@ export default function LinkWithEffect({ linkText,
         </Link>
     );
 }
-
-// Define prop types and default props
-LinkWithEffect.propTypes = {
-    linkText: PropTypes.string.isRequired,
-    href: PropTypes.string.isRequired,
-    className: PropTypes.string,
-};
-
-LinkWithEffect.defaultProps = {
-    className: "btn"
-};
