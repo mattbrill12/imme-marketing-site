@@ -56,9 +56,8 @@ export default function Header5() {
       <SideMenu isOpen={isOpen} setIsOpen={setIsOpen} />
 
       <div
-        className={`mobile-menu-wrapper ${
-          mobileMenuOpen ? 'body-visible' : ''
-        } `}
+        className={`mobile-menu-wrapper ${mobileMenuOpen ? 'body-visible' : ''
+          } `}
       >
         <div className="mobile-menu-area">
           <button

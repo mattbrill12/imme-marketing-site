@@ -1,4 +1,4 @@
-.breadcumb-menu {
+.breadcrumb-menu {
   max-width: 100%;
   padding: 0;
   list-style-type: none;
@@ -43,7 +43,7 @@
   }
 }
 
-.breadcumb-title {
+.breadcrumb-title {
   color: $white-color;
   margin: -0.15em 0 -0.15em 0;
   line-height: 1.1;
@@ -66,7 +66,7 @@
   }
 }
 
-.breadcumb-wrapper {
+.breadcrumb-wrapper {
   background-size: cover !important;
   padding: 240px 0;
   overflow: hidden;
@@ -95,35 +95,35 @@
   }
 }
 @include xxl {
-  .breadcumb-wrapper {
+  .breadcrumb-wrapper {
     padding: 200px 0;
   }
 }
 @include ml {
-  .breadcumb-wrapper {
+  .breadcrumb-wrapper {
     padding: 180px 0;
   }
 }
 @include md {
-  .breadcumb-wrapper {
+  .breadcrumb-wrapper {
     margin-top: 90px;
   }
 }
 @include sm {
-  .breadcumb-wrapper {
+  .breadcrumb-wrapper {
     padding: 120px 0;
   }
-  .breadcumb-title {
+  .breadcrumb-title {
     letter-spacing: normal;
   }
 }
 @include xs {
-  .breadcumb-menu li,
-  .breadcumb-menu a,
-  .breadcumb-menu span {
+  .breadcrumb-menu li,
+  .breadcrumb-menu a,
+  .breadcrumb-menu span {
     font-size: 14px;
   }
-  .breadcumb-wrapper {
+  .breadcrumb-wrapper {
     padding: 100px 0;
     margin-top: 86px;
     &.style2 {
