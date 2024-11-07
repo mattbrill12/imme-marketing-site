@@ -16,15 +16,15 @@ export default function Breadcrumb({ title, projectId = null }) {
         wrapperClassName: '',
         backgroundImage: 'url(/asset/img/bg/breadcrumb-bg1-1.jpg)',
         className: 'container',
-        breadcrumbOne: '',
-        title: title
+        title: title,
+        breadcrumbOne: ''
     };
 
     return (
         <div
             className={`breadcrumb-wrapper ${breadcrumb.wrapperClassName}`}
             style={{
-                backgroundImage: breadcrumb.backgroundImage || undefined,
+                backgroundImage: breadcrumb.backgroundImage
             }}
         >
             <div className={breadcrumb.className}>
