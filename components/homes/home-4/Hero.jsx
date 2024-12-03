@@ -1,3 +1,4 @@
+import LinkWithEffect from '@/components/common/LinkWithEffect';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -19,21 +20,11 @@ export default function Hero() {
               in building innovative software.
             </p>
             <div className="hero-btn-group">
-              <Link
-                scroll={false}
-                href="https://n8369rxllmn.typeform.com/to/QilAkYSc"
-                className="btn"
-                target="blank"
-              >
-                <span className="link-effect">
-                  <span className="effect-1">LETS START BUILDING</span>
-                  <span className="effect-1">LETS START BUILDING</span>
-                </span>
-              </Link>
+              <LinkWithEffect href="https://n8369rxllmn.typeform.com/to/QilAkYSc" linkText='LETS START BUILDING' />
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }

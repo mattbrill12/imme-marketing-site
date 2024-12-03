@@ -1,6 +1,7 @@
 'use client';
 import { allPortfolio, projects } from '@/data/portfolio';
 import Image from 'next/image';
+import LinkWithEffect from '../common/LinkWithEffect';
 
 export default function ProjectDetails({ portfolioId }) {
   // Find the project that matches the portfolioId
@@ -111,19 +112,7 @@ export default function ProjectDetails({ portfolioId }) {
             </div>
 
             <div className="mt-4">
-              <a
-                href={project.liveSiteUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn bg-theme text-title"
-              >
-                <span>
-                  <span className="link-effect">
-                    <span className="effect-1">VIEW LIVE SITE</span>
-                    <span className="effect-1">VIEW LIVE SITE</span>
-                  </span>
-                </span>
-              </a>
+              <LinkWithEffect href={project.liveSiteUrl} className="btn bg-theme text-title" linkText='VISIT LIVE SITE' />
             </div>
           </div>
 

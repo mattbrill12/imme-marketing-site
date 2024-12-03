@@ -1,3 +1,4 @@
+import LinkWithEffect from '@/components/common/LinkWithEffect';
 import { plans } from '@/data/pricing';
 import Link from 'next/link';
 import React from 'react';
@@ -48,28 +49,8 @@ export default function Pricing() {
                     </ul>
                   </div>
                   <div className="button-container">
-                    <Link
-                      scroll={false}
-                      href={elm.subscribeLink}
-                      className="btn style2"
-                      target="blank"
-                    >
-                      <span className="link-effect">
-                        <span className="effect-1">CHOOSE THIS PLAN</span>
-                        <span className="effect-1">CHOOSE THIS PLAN</span>
-                      </span>
-                    </Link>
-                    <Link
-                      scroll={false}
-                      href={elm.discoveryLink}
-                      className="btn"
-                      target="blank"
-                    >
-                      <span className="link-effect">
-                        <span className="effect-1">BOOK A DISCOVERY CALL</span>
-                        <span className="effect-1">BOOK A DISCOVERY CALL</span>
-                      </span>
-                    </Link>
+                    <LinkWithEffect href={elm.subscribeLink} className="btn style2" linkText='CHOOSE THIS PLAN' />
+                    <LinkWithEffect href={elm.discoveryLink} linkText='BOOK A DISCOVERY CALL' />
                   </div>
                 </div>
               </div>
@@ -77,6 +58,6 @@ export default function Pricing() {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 }
