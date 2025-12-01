@@ -1,0 +1,101 @@
+.pricing-card {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.pricing-card .button-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Adds space between the buttons */
+  margin-top: auto; /* Pushes the buttons container to the bottom */
+}
+
+.pricing-card .button-container .btn {
+  width: 100%; /* Ensure buttons take full width */
+}
+
+.pricing-card_title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.48px;
+  margin-top: -0.2em;
+  margin-bottom: 12px;
+}
+
+.pricing-card_wrap {
+  margin-bottom: 19px;
+}
+
+.pricing-card_price {
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: -1.8px;
+}
+
+.duration {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+}
+
+.description {
+  margin-bottom: 40px;
+}
+
+.pricing-card p {
+  font-size: 18px;
+  color: $black-color;
+}
+
+.team-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: -0.3em;
+  margin-bottom: 0px;
+}
+
+.checklist {
+  margin-bottom: 42px;
+}
+
+.checklist li {
+  font-family: $title-font;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.14px;
+  text-transform: uppercase;
+  color: $black-color;
+}
+
+.checklist i {
+  color: $black-color;
+}
+
+@include ml {
+  .pricing-card .pricing-card_price {
+    font-size: 50px;
+  }
+}
+
+@include lg {
+  .pricing-card .pricing-card_price {
+    font-size: 40px;
+  }
+
+  .pricing-card {
+    padding: 30px;
+  }
+
+  .pricing-card p {
+    font-size: 14px;
+  }
+}
+
+@include xs {
+  .pricing-card .pricing-card_price {
+    font-size: 30px;
+  }
+}
