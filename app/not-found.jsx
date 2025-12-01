@@ -4,7 +4,7 @@ import LinkWithEffect from "@/components/common/LinkWithEffect";
 import React from "react";
 
 export const metadata = {
-  title: "Not Found || Cognify - Creative Agency & Portfolio Nextjs Template",
+  title: "Not Found || IMME - Creative Agency & Portfolio Nextjs Template",
 };
 export default function NotFoundPage() {
   return (
